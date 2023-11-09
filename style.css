@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: verdana;
+    color: white;
+}
+
+body {
+    display: flex;
+}
+
+.main{
+    width: 1280px;
+    height: 720px;
+    margin: 0 auto;
+    background-color: rgb(50, 50, 50);
+    display: flex;
+}
+
+.title {
+    width: 280px;
+    height: 100%;
+    border-right: 2px solid white;
+    text-align: center;
+}
+
+.title > .title_up {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    font: italic bold 30pt "Times New Roman";
+    line-height: 50px;
+}
+
+.title > .title_down {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end;
+    font: 10pt "Verdana";
+    line-height: 16px;
+    padding-bottom: 20px;
+}
+
+.contents {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    border-bottom: 2px solid white;
+}
+
+nav img {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 250px;
+    height: 100%;
+    opacity: 50%;
+    padding: 70px 40px;
+}
+
+article > .back {
+    z-index: -10;
+    opacity: 1;
+    position: absolute;
+    background-image: url(img/back.png);
+    height: 100%;
+    width: 0px;
+    top: 0;
+    left: 0;
+}
+
+article h1 {
+    font-size: 36px;
+    font-weight: bold;
+    width: 65px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+article p {
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+article img {
+    position: absolute;
+    width: 170px;
+    bottom: 70px;
+}
+
+article:hover {
+    opacity: 0.999;
+    transition: opacity 0.5s ease-in-out;
+}
+
+article:hover img {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+article:hover > .back {
+    width: 100%;
+    transition: width 0.5s;
+}
+
+article:not(:hover) > .back {
+    width: 0px;
+    transition: width 0.5s;
+}
