@@ -1,69 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>분명 여기는 포트나이트인데</title>
+ <meta charset="UTF-8">
+ <title>대한투어</title>
+ <link rel="stylesheet" href="css/style.css">
+ <script src="script/jquery-1.12.3.js"></script>
+ <script src="script/script.js"></script>
 </head>
 <body>
-    <div class="main">
-        <div class="title">
-            <div class="title_up">
-                FORTNITE
-            </div>
-            <div class="title_down">
-                @2023, Epic Games, Inc.
-                <br>All Rights Reserved.
-            </div>
-        </div>
 
-        <div class="contents">
-            <nav>
-                <img src="img/mail.png" alt="mail">
-            </nav>
+ <!-- 팝업 영역 -->
+ <div class="modal">
+  <div class="modal_inner">
+   <p class="tit">
+    [허니문 예약자 대상 경품 당첨자 안내사항]
+   </p>
+   <p class=txt>
+     박람회 기간 (19.5.25 ~ 6.7) 허니문상품 예약 고객 중 <br>추첨을 통해 아래의 경품을 드립니다.
+   </p>
+   <ul class="txt">
+    <li>1등. LG 프라엘 LED 마스크 1쌍</li>
+    <li>- 당첨자 개별연락/제세공과금 본인부담</li>
+    <li>2등. 한국 도자기 세트 6쌍 
+    <li>- 당첨자 개별연락 / 제세공과금 본인부담</li>
+    <li>3등. 하나투어 마일리지 5만 마일</li>
+    <li>4등. 하나투어 마일리지 3만 마일</li>
+   </ul>
+   <input type="button" class="btn" value="닫기X">
+  </div>
+ </div>
 
-            <section>
-                <article>
-                    <h1>01</h1>
-                    <p>BATTLE ROYAL</p>
-                    Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Obcaecati nemo voluptates
-                    numquam porro iure fugiat praesentium
-                    <img src="img/img1.png" alt="img">
-                    <div class="back"></div>
-                </article>
-                <article>
-                    <div class="back"></div>
-                    <h1>02</h1>
-                    <p>ZERO BUILD</p>
-                    Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Obcaecati nemo voluptates
-                    numquam porro iure fugiat praesentium
-                    <a href="index2.html">
-                        <img src="img/img2.png" alt="img">
-                    </a>
-                </article>
-                <article>
-                    <h1>03</h1>
-                    <p>ARENA MODES</p>
-                    Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Obcaecati nemo voluptates
-                    numquam porro iure fugiat praesentium
-                    <img src="img/img3.png" alt="img">
-                    <div class="back"></div>
-                </article>
-                <article>
-                    <h1>04</h1>
-                    <p>ARENA MODES</p>
-                    Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Obcaecati nemo voluptates
-                    numquam porro iure fugiat praesentium
-                    <img src="img/img4.png" alt="img">
-                    <div class="back"></div>
-                </article>
-            </section>
-        </div>
-    </div>
+ <!-- 헤더영역 -->
+ <header class="clearfix">
+  <div class="wrap">
+   <!-- 로고 영역 -->
+   <h1>
+    <a href="#"><img src="images/logo.jpg" alt="대한TOUR"></a>
+   </h1>
+   <!-- 메뉴 영역 -->
+   <nav>
+    <div class="nav_bg"></div>
+    <ul class="gnb">
+     <li>
+      <a href="#">해외여행</a>
+      <ul class="sub">
+       <li><a href="#">동남아/대만</a></li>
+       <li><a href="#">중국/홍콩</a></li>
+       <li><a href="#">유럽/두바이</a></li>
+       <li><a href="#">미주/하와이</a></li>
+      </ul>
+     </li>
+     <li>
+      <a href="#">국내여행</a>
+      <ul class="sub">
+       <li><a href="#">서울/경기권</a></li>
+       <li><a href="#">충청권</a></li>
+       <li><a href="#">전라권</a></li>
+       <li><a href="#">경상/강원권</a></li>
+      </ul>
+     </li>
+     <li>
+      <a href="#">제주도</a>
+      <ul class="sub">
+       <li><a href="#">버스여행</a></li>
+       <li><a href="#">자유여행</a></li>
+       <li><a href="#">호텔/펜션</a></li>
+      </ul>
+     </li>
+     <li>
+      <a href="#">렌트카</a>
+      <ul class="sub">
+       <li><a href="#">국내 렌트카</a></li>
+       <li><a href="#">국외 렌트카</a></li>
+      </ul>
+     </li>
+    </ul>
+   </nav>  
+  </div>
+ </header>
+
+ <!-- 슬라이드 및 콘텐츠 영역-->
+ <div class="wrap">
+  <!-- 슬라이드 영역 -->
+  <ul class="slide">
+   <li><a href="#"><img src="images/s1.jpg" alt="우정을 나누며 함께 가는 여행"></a></li>
+   <li><a href="#"><img src="images/s2.jpg" alt="열심히 일한 당신에게 드리는 휴가"></a></li>
+   <li><a href="#"><img src="images/s3.jpg" alt="새로워진 대한투어를 지금 만나보세요."></a></li>
+  </ul>
+
+  <!-- 콘텐츠 영역 -->
+  <div class="content clearfix">
+   <!-- 공지사항 영역 -->
+   <section class="notice">
+    <h2>공지사항</h2>
+    <ul>
+     <li><a href="#">허니문 예약자 대상 경품 추첨 이벤트<span class="day">2019/05/07</span></a></li>
+     <li><a href="#">BC카드 시스템 작업으로 인한 서비스 이용 제한 안내<span class="day">2019/02/22</span></a></li>
+     <li><a href="#">필리핀 보라카이 섬 재오픈 관련 안내<span class="day">2018-08-24</span></a></li>
+     <li><a href="#">대한투어 마일리지 가입 안내<span class="day">2018-02-21</span></a></li>
+    </ul>
+   </section>
+   <!-- 갤러리 영역 -->
+   <section class="gal">
+    <h2>갤러리</h2>
+    <ul>
+     <li><a href="#"><img src="images/g1.jpg" alt="제주도"></a></li>
+     <li><a href="#"><img src="images/g2.jpg" alt="괌"></a></li>
+     <li><a href="#"><img src="images/g3.jpg" alt="호주"></a></li>
+    </ul>
+   </section>
+   <!-- 바로가기 영역 -->
+   <section class="baro">
+    <h2>바로가기</h2>
+     <ul>
+      <li><a href="#">할인쿠폰</a></li>
+      <li><a href="#">여행정보</a></li>
+      <li><a href="#">여행용물품</a></li>
+     </ul>
+   </section>
+  </div>
+ </div>
+
+ <!-- 푸터 영역 -->
+ <footer>
+  <div class="wrap">
+   <!-- 카피라이터 영역 -->
+   <ul class="copy">
+    <li>대표 : 김진국,송미선 사업자등록번호 : 102-81-39440 </li>
+    <li>주소 : (03161)서울특별시 종로구 인사동 5길 41 고객센터 1577-1233</li>
+    <li>COPYRIGHTⓒDAEHANTOUR SERVICE INC. ALL RIGHTS RESERVED</li>
+   </ul>
+   <!-- sns 영역 -->
+   <ul class="sns">
+    <li><a href="#">facebook</a></li>
+    <li><a href="#">insta</a></li>
+    <li><a href="#">blog</a></li>
+   </ul>
+   <!-- 패밀리사이트 영역 -->
+   <div class="fam">
+    <select>
+     <option value="">패밀리사이트</option>
+     <option value="1">대한항공</option>
+     <option value="2">대한호텔</option>
+     <option value="3">대한면세점</option>
+    </select>
+   </div> 
+  </div>
+ </footer>
+
 </body>
 </html>
