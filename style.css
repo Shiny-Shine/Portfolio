@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height: 44px;
+    background-color: rgba(22, 22, 23, .8);
+    position: fixed;
+}
+
+nav{
+    width: 1024px;
+    height: 44px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 6px 50px;
+    position: relative;
+    color: white;
+}
+
+nav > a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: all .3s ease-out;
+}
+
+nav > a:hover::after{
+    width: 50%;
+}
+
+nav > a:first-child > img {
+    width: 35px;
+    height: 35px;
+}
+
+section {
+    width: 100%;
+    height: 700px;
+    background-image: url(./img/);
+    background-size: cover; 
+    background-position: center;
+}
+
+section > .textWrap {
+    width: 100%;
+    padding-top: 99px;
+}
+
+.textWrap > h1 {
+    display: block;
+    font-size: 56px;
+}
+
+.textWrap > span {
+    font-size: 28px;
+    padding: 15px;
+}
+
+.textWrap > h3 {
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: .004em;
+    margin-top: 6px;
+}
