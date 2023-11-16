@@ -2,12 +2,16 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "SF Pro Display","SF Pro KR","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 body {
     width: 100%;
     height: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 header{
@@ -28,7 +32,6 @@ nav{
 }
 
 nav > a {
-    text-decoration: none;
     padding: 6px 50px;
     position: relative;
     color: white;
@@ -50,6 +53,10 @@ nav > a:hover::after{
     width: 50%;
 }
 
+nav > a:first-child:hover::after{
+    width: 0%;
+}
+
 nav > a:first-child > img {
     width: 35px;
     height: 35px;
@@ -62,29 +69,26 @@ nav > a:first-child > img {
 }
 
 .bannerBig {
-    position: relative;
     width: 100%;
     height: 692px;
-    color: white;
-    background-color: lightgray;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/section1.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: rgb(249, 249, 251);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-bottom: 12px;
 }
 
+.bannerBig:nth-child(2), .gContainer > .bannerBig:first-child {
+    background-color: #000;
+    color: white;
+}
+
 .bannerBig > .textWrap {
     text-align: center;
-    padding-bottom: 3em;
+    padding-top: 55px;
 }
 
 .textWrap > h2 {
-    font-family: "SF";
     display: block;
     font-size: 56px;
     line-height: 1.07143;
@@ -98,8 +102,61 @@ nav > a:first-child > img {
 }
 
 .textWrap > h3 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
-    letter-spacing: 0.004em;
+    letter-spacing: .004em;
     margin-top: 6px;
+}
+
+.textWrap > .links {
+    font-size: 20px;
+    letter-spacing: .011em;
+    margin-top: 0.65em;
+    height: 32px;
+}
+
+.links > a {
+    color: rgb(41, 151, 255);
+}
+
+.innerImg{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gContainer {
+    margin: 0 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(50%, auto));
+    column-gap: 12px;
+}
+
+.gContainer > .bannerBig {
+    height: 580px;
+}
+
+.gContainer > .bannerBig > .textWrap > h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+}
+
+.gContainer > .bannerBig > .textWrap > h3 {
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    margin-top: 4px;
+}
+
+.gContainer > .bannerBig > .textWrap > .links {
+    font-size: 17px;
+    letter-spacing: .022em;
+    margin-top: 0.65em;
+    height: 32px;
 }
