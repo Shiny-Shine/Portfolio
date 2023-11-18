@@ -154,6 +154,9 @@ main {
     flex-basis: 33.33333%;
     max-width: 33.33333%;
     padding: 38px 0;
+    border: 1px solid #d2d2d7;
+    border-top: none;
+    border-left: none;
 }
 
 .items > a {
