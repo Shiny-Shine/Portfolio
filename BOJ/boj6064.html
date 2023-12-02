@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style2.css">
+    <link rel="stylesheet" href="../styleBOJ.css">
+    <title>6064번 카잉 달력</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+            <a href="#">About</a>
+            <a href="../math.html">Algorithm</a>
+            <a href="../dev.html">Dev</a>
+            <a href="#">Projects</a>
+            <a href="#">Game</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="localnav">
+            <div class="localwrap">
+                <a href="../math.html">Algorithm</a>
+            </div>
+        </div>
+        <main>
+            <div class="category">
+                <div class="cWrap">
+                    <ul>
+                        <li><a href="../math.html">수학</a></li>
+                        <li><a href="../implement.html">구현</a></li>
+                        <li><a href="#">다이나믹 프로그래밍</a></li>
+                        <li><a href="#">자료 구조</a></li>
+                        <li><a href="#">그래프</a></li>
+                        <li><a href="#">그리디 알고리즘</a></li>
+                        <li><a href="#">문자열</a></li>
+                        <li><a href="#">브루트포스 알고리즘</a></li>
+                        <li><a href="#">정렬</a></li>
+                        <li><a href="#">이분 탐색</a></li>
+                        <li><a href="#">트리</a></li>
+                        <li><a href="#">기타</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="results">
+                <div class="bTitle">
+                    <h2>[백준] BOJ 6064 - 카잉 달력</h2>
+                    <p>2019-03-22</p>
+                    <a href="https://www.acmicpc.net/problem/6064">https://www.acmicpc.net/problem/6064</a>
+                </div>
+
+                <p>최소공배수를 이용해 푸는 문제였지만 구현으로 풀었던 문제이다.</p>
+                <p>최소공배수를 이용한 풀이가 모범 답안이고, 아래는 내 개인적인 접근이다.</p>
+                <p>달력의 월 : 일의 최대값이 다르다, 다른 진법이다. 나머지 연산을 이용하면 진법이 다른 두 수에 같은 값을 더해줄 수 있다.</p>
+                <p>1씩 더해줄 경우 당연히 시간초과가 되므로, 처음엔 x,y중 큰 값, 이후엔 M,N중 큰 값을 더해준다.</p>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&width=800&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=true&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2523define%2520_CRT_SECURE_NO_WARNINGS%250A%2523include%253Cstdio.h%253E%250A%250Aint%2520main%28void%29%2520%257B%250A%2509int%2520x%2520%253D%25201%252C%2520y%2520%253D%25201%252C%2520m%2520%253D%25200%252C%2520n%2520%253D%25200%252C%2520t%252C%2520b%253B%250A%250A%2509scanf%28%2522%2525d%2522%252C%2520%2526t%29%253B%250A%250A%2509for%2520%28int%2520i%2520%253D%25200%253B%2520i%2520%253C%2520t%253B%2520i%252B%252B%29%2520%257B%250A%250A%2509%2509scanf%28%2522%2525d%2520%2525d%2520%2525d%2520%2525d%2522%252C%2520%2526m%252C%2520%2526n%252C%2520%2526x%252C%2520%2526y%29%253B%250A%2509%2509for%2520%28int%2520a%2520%253D%2520x%253B%253B%2520a%2520%252B%253D%2520m%29%2520%257B%250A%2509%2509%2509b%2520%253D%2520%28a%2525n%29%2520%253D%253D%25200%2520%253F%2520n%2520%253A%2520%28a%2525n%29%253B%250A%250A%2509%2509%2509if%2520%28b%2520%253D%253D%2520y%29%2520%257B%250A%2509%2509%2509%2509printf%28%2522%2525d%255Cn%2522%252C%2520a%29%253B%250A%2509%2509%2509%2509break%253B%250A%2509%2509%2509%257D%250A%250A%2509%2509%2509if%2520%28a%2520%253E%2520m*n%29%2520%257B%250A%2509%2509%2509%2509printf%28%2522-1%255Cn%2522%29%253B%250A%2509%2509%2509%2509break%253B%250A%2509%2509%2509%257D%250A%2509%2509%257D%250A%2509%257D%250A%257D"
+                    style="width: 800px; height: 653px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </main>
+    </section>
+</body>
+</html>

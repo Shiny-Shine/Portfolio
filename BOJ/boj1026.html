@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style2.css">
+    <link rel="stylesheet" href="../styleBOJ.css">
+    <title>1026번 보물</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+            <a href="#">About</a>
+            <a href="../math.html">Algorithm</a>
+            <a href="../dev.html">Dev</a>
+            <a href="#">Projects</a>
+            <a href="#">Game</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="localnav">
+            <div class="localwrap">
+                <a href="../math.html">Algorithm</a>
+            </div>
+        </div>
+        <main>
+            <div class="category">
+                <div class="cWrap">
+                    <ul>
+                        <li><a href="../math.html">수학</a></li>
+                        <li><a href="../implement.html">구현</a></li>
+                        <li><a href="#">다이나믹 프로그래밍</a></li>
+                        <li><a href="#">자료 구조</a></li>
+                        <li><a href="#">그래프</a></li>
+                        <li><a href="#">그리디 알고리즘</a></li>
+                        <li><a href="#">문자열</a></li>
+                        <li><a href="#">브루트포스 알고리즘</a></li>
+                        <li><a href="#">정렬</a></li>
+                        <li><a href="#">이분 탐색</a></li>
+                        <li><a href="#">트리</a></li>
+                        <li><a href="#">기타</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="results">
+                <div class="bTitle">
+                    <h2>[백준] BOJ 1026 - 보물</h2>
+                    <p>2018-09-28</p>
+                    <a href="https://www.acmicpc.net/problem/1026">https://www.acmicpc.net/problem/1026</a>
+                </div>
+
+                <p>두 배열의 같은 인덱스에 존재하는 값끼리 곱해 그 합의 최소값을 구하는 문제이다.</p>
+                <p>합 S의 값을 최소화하기 위해 배열 A의 수를 재배열할 수 있다, 단 B는 재배열할 수 없다.</p>
+                <p>같은 인덱스의 값이 최소가 되려면 양쪽 배열에서 최소값과 최대값을 곱해주면 된다.</p>
+                <p>배열 B는 재배열할 수 없지만 편의를 위해 배열 A를 오름차순 정렬하고, 배열 B를 내림차순 정렬하면 쉽게 답을 구할 수 있다.</p>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&width=700&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=true&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2523include%2520%253Ciostream%253E%250A%2523include%2520%253Calgorithm%253E%250A%2523include%2520%253Cvector%253E%250Ausing%2520namespace%2520std%253B%250Aint%2520main%28%29%2520%257B%250A%2509int%2520n%253B%250A%2509cin%2520%253E%253E%2520n%253B%250A%2509vector%253Cint%253E%2520v%252C%2520v1%253B%250A%2509int%2520num%253B%250A%2509for%2520%28int%2520i%2520%253D%25200%253B%2520i%2520%253C%2520n%253B%2520i%252B%252B%29%2520%257B%250A%2509%2509cin%2520%253E%253E%2520num%253B%250A%2509%2509v.push_back%28num%29%253B%250A%2509%257D%250A%2509for%2520%28int%2520i%2520%253D%25200%253B%2520i%2520%253C%2520n%253B%2520i%252B%252B%29%2520%257B%250A%2509%2509cin%2520%253E%253E%2520num%253B%250A%2509%2509v1.push_back%28num%29%253B%250A%2509%257D%250A%2509sort%28v.begin%28%29%252C%2520v.end%28%29%29%253B%250A%2509sort%28v1.rbegin%28%29%252C%2520v1.rend%28%29%29%253B%250A%2509int%2520sum%2520%253D%25200%252C%2520buf%2520%253D%25200%253B%250A%2509for%2520%28int%2520i%2520%253D%25200%253B%2520i%2520%253C%2520n%253B%2520i%252B%252B%29%2520%257B%250A%2509%2509sum%2520%252B%253D%2520v.back%28%29%2520*%2520v1.back%28%29%253B%250A%2509%2509v.pop_back%28%29%253B%250A%2509%2509v1.pop_back%28%29%253B%250A%2509%257D%250A%2509cout%2520%253C%253C%2520sum%253B%250A%257D"
+                    style="width: 800px; height: 671px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </main>
+    </section>
+</body>
+</html>

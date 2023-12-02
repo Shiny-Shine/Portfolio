@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style2.css">
+    <link rel="stylesheet" href="../styleBOJ.css">
+    <title>1065번 한수</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+            <a href="#">About</a>
+            <a href="../math.html">Algorithm</a>
+            <a href="../dev.html">Dev</a>
+            <a href="#">Projects</a>
+            <a href="#">Game</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="localnav">
+            <div class="localwrap">
+                <a href="../math.html">Algorithm</a>
+            </div>
+        </div>
+        <main>
+            <div class="category">
+                <div class="cWrap">
+                    <ul>
+                        <li><a href="../math.html">수학</a></li>
+                        <li><a href="../implement.html">구현</a></li>
+                        <li><a href="#">다이나믹 프로그래밍</a></li>
+                        <li><a href="#">자료 구조</a></li>
+                        <li><a href="#">그래프</a></li>
+                        <li><a href="#">그리디 알고리즘</a></li>
+                        <li><a href="#">문자열</a></li>
+                        <li><a href="#">브루트포스 알고리즘</a></li>
+                        <li><a href="#">정렬</a></li>
+                        <li><a href="#">이분 탐색</a></li>
+                        <li><a href="#">트리</a></li>
+                        <li><a href="#">기타</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="results">
+                <div class="bTitle">
+                    <h2>[백준] BOJ 1065 - 한수</h2>
+                    <p>2019-03-22</p>
+                    <a href="https://www.acmicpc.net/problem/1065">https://www.acmicpc.net/problem/1065</a>
+                </div>
+
+                <p>등차수열 == 한수 라는걸 파악하는게 핵심인 문제이다.</p>
+                <p>완전탐색으로 해결해주면 된다.</p>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&width=800&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=true&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%25202020-12-01%2520BOJ-1065%28%25ED%2595%259C%25EC%2588%2598%29%250A%2523include%2520%253Ciostream%253E%250Ausing%2520namespace%2520std%253B%250A%250Aint%2520main%28%29%250A%257B%250A%2509int%2520hansoo%252C%2520one%252C%2520ten%252C%2520hund%252C%2520cnt%2520%253D%25200%253B%250A%2509cin%2520%253E%253E%2520hansoo%253B%250A%250A%2509if%2520%28hansoo%2520%253C%253D%252099%29%2520%257B%2520cout%2520%253C%253C%2520hansoo%253B%2509return%25200%253B%2520%257D%250A%2509for%2520%28int%2520i%2520%253D%2520111%253B%2520i%2520%253C%253D%2520hansoo%253B%2520i%252B%252B%29%250A%2509%257B%250A%2509%2509hund%2520%253D%2520i%2520%252F%2520100%253B%250A%2509%2509ten%2520%253D%2520%28i%2520%2525%2520100%29%2520%252F%252010%253B%250A%2509%2509one%2520%253D%2520i%2520%2525%252010%253B%250A%250A%2509%2509if%2520%28%28ten%2520-%2520one%29%2520%253D%253D%2520%28hund%2520-%2520ten%29%29%2509cnt%252B%252B%253B%250A%2509%257D%250A%250A%2509cout%2520%253C%253C%2520cnt%2520%252B%252099%253B%250A%257D"
+                    style="width: 800px; height: 557px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
