@@ -55,11 +55,7 @@
                 <p>합 S의 값을 최소화하기 위해 배열 A의 수를 재배열할 수 있다, 단 B는 재배열할 수 없다.</p>
                 <p>같은 인덱스의 값이 최소가 되려면 양쪽 배열에서 최소값과 최대값을 곱해주면 된다.</p>
                 <p>배열 B는 재배열할 수 없지만 편의를 위해 배열 A를 오름차순 정렬하고, 배열 B를 내림차순 정렬하면 쉽게 답을 구할 수 있다.</p>
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&width=700&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=true&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2523include%2520%253Ciostream%253E%250A%2523include%2520%253Calgorithm%253E%250A%2523include%2520%253Cvector%253E%250Ausing%2520namespace%2520std%253B%250Aint%2520main%28%29%2520%257B%250A%2509int%2520n%253B%250A%2509cin%2520%253E%253E%2520n%253B%250A%2509vector%253Cint%253E%2520v%252C%2520v1%253B%250A%2509int%2520num%253B%250A%2509for%2520%28int%2520i%2520%253D%25200%253B%2520i%2520%253C%2520n%253B%2520i%252B%252B%29%2520%257B%250A%2509%2509cin%2520%253E%253E%2520num%253B%250A%2509%2509v.push_back%28num%29%253B%250A%2509%257D%250A%2509for%2520%28int%2520i%2520%253D%25200%253B%2520i%2520%253C%2520n%253B%2520i%252B%252B%29%2520%257B%250A%2509%2509cin%2520%253E%253E%2520num%253B%250A%2509%2509v1.push_back%28num%29%253B%250A%2509%257D%250A%2509sort%28v.begin%28%29%252C%2520v.end%28%29%29%253B%250A%2509sort%28v1.rbegin%28%29%252C%2520v1.rend%28%29%29%253B%250A%2509int%2520sum%2520%253D%25200%252C%2520buf%2520%253D%25200%253B%250A%2509for%2520%28int%2520i%2520%253D%25200%253B%2520i%2520%253C%2520n%253B%2520i%252B%252B%29%2520%257B%250A%2509%2509sum%2520%252B%253D%2520v.back%28%29%2520*%2520v1.back%28%29%253B%250A%2509%2509v.pop_back%28%29%253B%250A%2509%2509v1.pop_back%28%29%253B%250A%2509%257D%250A%2509cout%2520%253C%253C%2520sum%253B%250A%257D"
-                    style="width: 800px; height: 671px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                <script src="https://gist.github.com/Shiny-Shine/4169855548243c4397812c1dea840d10.js"></script>
             </div>
         </main>
     </section>
