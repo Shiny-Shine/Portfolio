@@ -1,0 +1,10 @@
+.items {
+    min-height: 250px;
+    max-height: 400px;
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+    padding: 25px 0;
+    border: 1px solid #d2d2d7;
+    border-top: none;
+    border-left: none;
+}
