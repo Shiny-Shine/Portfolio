@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style2.css">
     <link rel="stylesheet" href="../CSS/styleBOJ.css">
-    <title>1026번 보물</title>
+    <title>10158번 개미</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="../Script/srcTable.js"></script>
 </head>
 <body>
     <header>
@@ -47,17 +48,18 @@
             </div>
             <div class="results">
                 <div class="bTitle">
-                    <h2>[백준] BOJ 1026 - 보물</h2>
+                    <h2>[백준] BOJ 10158 - 개미</h2>
                     <p>2018-09-28</p>
-                    <a href="https://www.acmicpc.net/problem/1026">https://www.acmicpc.net/problem/1026</a>
+                    <a href="https://www.acmicpc.net/problem/10158">https://www.acmicpc.net/problem/10158</a>
                 </div>
 
                 <div class="mainText">
                     <h1>풀이</h1>
-                    <p>두 배열의 같은 인덱스에 존재하는 값끼리 곱해 그 합의 최소값을 구하는 문제이다.</p>
-                    <p>합 S의 값을 최소화하기 위해 배열 A의 수를 재배열할 수 있다, 단 B는 재배열할 수 없다.</p>
-                    <p>같은 인덱스의 값이 최소가 되려면 양쪽 배열에서 최소값과 최대값을 곱해주면 된다.</p>
-                    <p>배열 B는 재배열할 수 없지만 편의를 위해 배열 A를 오름차순 정렬하고, 배열 B를 내림차순 정렬하면 쉽게 답을 구할 수 있다.</p>
+                    <p>t의 최대 범위가 200,000,000이므로 시뮬레이션으로는 풀 수 없다.<br>다른 방식으로의 접근이 필요한데</p>
+                    <p>1초가 지나면 개미의 x값은 (x + 1) or (x - 1)이 되고 y값도 (y + 1) or (y - 1)이 된다.</p>
+                    <p>x축과 y축을 분리해서 생각하면 편해진다.</p>
+                    <p>처음의 위치 (p,q) 에서 시간을 더한 값을 격자 (w,h)의 길이로 나눈 나머지를 구한다.</p>
+                    <p>나머지가 0이 아니면 그 값을 끝 (w,h) 에서 빼고. 나머지가 나누어 떨어지면 0에서 더해준다.</p>
                 </div>
 
                 <div class="langTeb">
@@ -66,7 +68,7 @@
                             <img src="../img/cpp.png" alt="">
                             C/C++
                         </li>
-                        <li class="langBtn">
+                        <li class="langBtn current">
                             <img src="../img/py.png" alt="">
                             Python
                         </li>
@@ -99,7 +101,33 @@
                             Lua
                         </li>
                     </ul>
-                    <script id="1" src="https://gist.github.com/Shiny-Shine/4169855548243c4397812c1dea840d10.js"></script>
+                    <div id="tab1" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/7a1a1b92909f43e96339772d311c96c3.js"></script>
+                    </div>
+                    <div id="tab2" class="tab current">
+                        <script src="https://gist.github.com/Shiny-Shine/6d971b87908334386fab60c529e7f617.js"></script>
+                    </div>
+                    <div id="tab3" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/625187497949f76a7136b276e1187bf2.js"></script>
+                    </div>
+                    <div id="tab4" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/91c39d661c5f6821121c69988feea539.js"></script>
+                    </div>
+                    <div id="tab5" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/f20d067462e546e4cbff5a8474ca040b.js"></script>
+                    </div>
+                    <div id="tab6" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/2b0f3d1a9ded45e2f3ad41ed188a1b49.js"></script>
+                    </div>
+                    <div id="tab7" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/25e75fa1e9ec25a3c73bbbe04589b883.js"></script>
+                    </div>
+                    <div id="tab8" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/6084d8f45ef76c742bb620c21c0bd6c3.js"></script>
+                    </div>
+                    <div id="tab9" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/f1521af1ad616883420adb8661b9c63e.js"></script>
+                    </div>
                 </div>
             </div>
         </main>

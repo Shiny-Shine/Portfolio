@@ -5,6 +5,7 @@
 }
 
 .bTitle {
+    width: 80%;
     text-align: center;
     border-bottom: 1px solid #d2d2d7;
     padding: 28px 0;
@@ -46,7 +47,6 @@ main h1 {
     align-items: center;
     padding: 0px;
     list-style: none;
-    margin-bottom: 20px;
 }
 
 .tabs li {
@@ -60,5 +60,17 @@ main h1 {
     width: 35px;
     height: 35px;
     margin: 0 auto;
+    display: block;
+}
+
+.tab {
+    display: none;
+}
+
+.tabs .current {
+    background-color: lightgray;
+}
+
+.current {
     display: block;
 }

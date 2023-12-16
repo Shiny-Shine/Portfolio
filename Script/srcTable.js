@@ -1,11 +1,12 @@
 $(document).ready(function(){
     $('ul.tabs li').click(function(){
-        var tab_id = $(this).attr('data-tab');
+        let li_num = $("li").index(this);
+        li_num -= 11;
 
         $('ul.tabs li').removeClass('current');
-        $('.tab_content').removeClass('current');
+        $('.tab').removeClass('current');
 
         $(this).addClass('current');
-        $('#' + tab_id).addClass('current');
+        $('#tab' + li_num).addClass('current');
     })
 })
