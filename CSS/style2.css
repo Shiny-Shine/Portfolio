@@ -29,7 +29,7 @@ header{
 }
 
 nav{
-    width: 1024px;
+    max-width: 1024px;
     height: 44px;
     margin: 0 auto;
     display: flex;
@@ -110,7 +110,7 @@ section {
 }
 
 main {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -151,14 +151,14 @@ main {
 }
 
 .results {
-    width: 1200px;
+    max-width: 1200px;
     border-left: 1px solid #d2d2d7;
     display: flex;
     flex-wrap: wrap;
 }
 
 .items {
-    min-height: 250px;
+    min-width: 260px;
     max-height: 400px;
     flex-basis: 25%;
     max-width: 25%;

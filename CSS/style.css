@@ -23,7 +23,7 @@ header{
 }
 
 nav{
-    width: 1024px;
+    max-width: 1024px;
     height: 44px;
     margin: 0 auto;
     display: flex;
