@@ -78,6 +78,12 @@ nav > a:first-child > img {
     margin-bottom: 12px;
 }
 
+.bannerBig > .gameWrap {
+    width: 100%;
+    height: 100%;
+    max-width: 1024px;
+}
+
 .bannerBig:nth-child(2), .gContainer > .bannerBig:first-child {
     background-color: #000;
     color: white;
