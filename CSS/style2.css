@@ -155,6 +155,17 @@ main {
     border-left: 1px solid #d2d2d7;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+.results > .gameWrap {
+    position: relative;
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+.results > .gameWrap > iframe{
+    
 }
 
 .items {
@@ -180,9 +191,11 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 225px;
+    min-width: 350px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    font-family: "yg-jalnan";
 }
 
 .innerImg > h2 {
@@ -191,6 +204,10 @@ main {
 }
 
 .innerImg > span {
+    font-family: "yg-jalnan";
+}
+
+.innerImg > p{
     font-family: "yg-jalnan";
 }
 
