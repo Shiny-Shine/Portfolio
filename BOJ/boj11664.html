@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style2.css">
     <link rel="stylesheet" href="../CSS/styleBOJ.css">
-    <title>1026번 보물</title>
+    <title>11664번 선분과 점</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="../Script/srcTable.js"></script>
 </head>
@@ -48,17 +48,17 @@
             </div>
             <div class="results">
                 <div class="bTitle">
-                    <h2>[백준] BOJ 1026 - 보물</h2>
-                    <p>2018-09-28</p>
-                    <a href="https://www.acmicpc.net/problem/1026">문제 보기</a>
+                    <h2>[백준] BOJ 11664 - 선분과 점</h2>
+                    <p>2023-08-16</p>
+                    <a href="https://www.acmicpc.net/problem/11664">문제 보기</a>
                 </div>
 
                 <div class="mainText">
                     <h1>풀이</h1>
-                    <p>두 배열의 같은 인덱스에 존재하는 값끼리 곱해 그 합의 최소값을 구하는 문제이다.</p>
-                    <p>합 S의 값을 최소화하기 위해 배열 A의 수를 재배열할 수 있다, 단 B는 재배열할 수 없다.</p>
-                    <p>같은 인덱스의 값이 최소가 되려면 양쪽 배열에서 최소값과 최대값을 곱해주면 된다.</p>
-                    <p>배열 B는 재배열할 수 없지만 편의를 위해 배열 A를 오름차순 정렬하고, 배열 B를 내림차순 정렬하면 쉽게 답을 구할 수 있다.</p>
+                    <p>삼분 탐색 문제이다.</p>
+                    <p>삼분 탐색이란 이분 탐색과 비슷하지만 그래프값이 2차함수처럼 아래위로 볼록한 함수일 경우에 가능한 탐색이다.</p>
+                    <p>그래프를 3등분하여 범위를 좁혀 가며 찾는 방법이다.</p>
+                    <p>3분 탐색 자체는 알겠지만 문제에 적용을 어텋게 하는지 몰라서 결국 제대로 풀지 못했다.</p>
                 </div>
 
                 <div class="langTeb">
@@ -67,9 +67,23 @@
                             <img src="../img/cpp.png" alt="">
                             C/C++
                         </li>
+                        <li class="langBtn current">
+                            <img src="../img/py.png" alt="">
+                            Python
+                        </li>
+                        <li class="langBtn">
+                            <img src="../img/java.png" alt="">
+                            Java
+                        </li>
                     </ul>
-                    <div id="tab1" class="tab current">
-                        <script src="https://gist.github.com/Shiny-Shine/ff0f07ffcc8df45292ce2034d2fde9a8.js"></script>
+                    <div id="tab1" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/290941b9a03ed85b1bb1fb71ff1bdafa.js"></script>
+                    </div>
+                    <div id="tab2" class="tab current">
+                        <script src="https://gist.github.com/Shiny-Shine/378423613a473d1444eb74f3dd9953a8.js"></script>
+                    </div>
+                    <div id="tab3" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/969be4bd36f0cad087f74e020cb45cef.js"></script>
                     </div>
                 </div>
             </div>

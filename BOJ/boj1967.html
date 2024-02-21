@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style2.css">
     <link rel="stylesheet" href="../CSS/styleBOJ.css">
-    <title>1026번 보물</title>
+    <title>1967번 트리의 지름</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="../Script/srcTable.js"></script>
 </head>
@@ -48,17 +48,20 @@
             </div>
             <div class="results">
                 <div class="bTitle">
-                    <h2>[백준] BOJ 1026 - 보물</h2>
-                    <p>2018-09-28</p>
-                    <a href="https://www.acmicpc.net/problem/1026">문제 보기</a>
+                    <h2>[백준] BOJ 1967 - 트리의 지름</h2>
+                    <p>2022-11-16</p>
+                    <a href="https://www.acmicpc.net/problem/1967">문제 보기</a>
                 </div>
 
                 <div class="mainText">
                     <h1>풀이</h1>
-                    <p>두 배열의 같은 인덱스에 존재하는 값끼리 곱해 그 합의 최소값을 구하는 문제이다.</p>
-                    <p>합 S의 값을 최소화하기 위해 배열 A의 수를 재배열할 수 있다, 단 B는 재배열할 수 없다.</p>
-                    <p>같은 인덱스의 값이 최소가 되려면 양쪽 배열에서 최소값과 최대값을 곱해주면 된다.</p>
-                    <p>배열 B는 재배열할 수 없지만 편의를 위해 배열 A를 오름차순 정렬하고, 배열 B를 내림차순 정렬하면 쉽게 답을 구할 수 있다.</p>
+                    <p>트리에서 어떤 두 노드 사이의 경로들 중 가장 긴 경로의 길이를 트리의 지름이라고 한다.</p>
+                    <p>가중치가 있는 트리에서, 트리의 지름을 구하는 문제이다.</p>
+                    <p>DFS를 사용해 풀었고, 가중치가 있기 때문에 가중치에 대한 처리도 해주어야 한다.</p>
+                    <p>인접 리스트를 구현할 때, pair로 가중치도 함께 저장해 두었다.</p>
+                    <p></p>
+                    <p>가중치와 상관없이 리프 노드와 리프 노드 사이의 경로가 가장 길 것이다.</p>
+                    <p>루트 노드에서 DFS탐색해 리프 노드들을 구한 뒤 각각의 리프 노드에서 DFS탐색해주며 가중치 합이 가장 높은 경로의 값을 구해주면 된다.</p>
                 </div>
 
                 <div class="langTeb">
@@ -69,7 +72,7 @@
                         </li>
                     </ul>
                     <div id="tab1" class="tab current">
-                        <script src="https://gist.github.com/Shiny-Shine/ff0f07ffcc8df45292ce2034d2fde9a8.js"></script>
+                        <script src="https://gist.github.com/Shiny-Shine/56d9727a30a2d411f010edff6565a530.js"></script>
                     </div>
                 </div>
             </div>

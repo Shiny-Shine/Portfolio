@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style2.css">
     <link rel="stylesheet" href="../CSS/styleBOJ.css">
-    <title>1026번 보물</title>
+    <title>1167번 트리의 지름</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="../Script/srcTable.js"></script>
 </head>
@@ -48,17 +48,20 @@
             </div>
             <div class="results">
                 <div class="bTitle">
-                    <h2>[백준] BOJ 1026 - 보물</h2>
-                    <p>2018-09-28</p>
-                    <a href="https://www.acmicpc.net/problem/1026">문제 보기</a>
+                    <h2>[백준] BOJ 1167 - 트리의 지름</h2>
+                    <p>2022-11-16</p>
+                    <a href="https://www.acmicpc.net/problem/1167">문제 보기</a>
                 </div>
 
                 <div class="mainText">
                     <h1>풀이</h1>
-                    <p>두 배열의 같은 인덱스에 존재하는 값끼리 곱해 그 합의 최소값을 구하는 문제이다.</p>
-                    <p>합 S의 값을 최소화하기 위해 배열 A의 수를 재배열할 수 있다, 단 B는 재배열할 수 없다.</p>
-                    <p>같은 인덱스의 값이 최소가 되려면 양쪽 배열에서 최소값과 최대값을 곱해주면 된다.</p>
-                    <p>배열 B는 재배열할 수 없지만 편의를 위해 배열 A를 오름차순 정렬하고, 배열 B를 내림차순 정렬하면 쉽게 답을 구할 수 있다.</p>
+                    <p><a href="./boj1967.html">1967번</a> 문제의 하드 버전으로 문제는 동일하다.</p>
+                    <p>입력 범위가 10004에서 100000으로 10배 늘어 기존 알고리즘으로는 풀지 못한다.</p>
+                    <p>트리의 지름 문제는 정석 풀이법이 알려져 있는 WELL-KNOWN 문제라고 한다.</p>
+                    <p>위 문제의 풀이가 WELL-KNOWN 풀이법에 상당히 근접했는데 아쉽다.</p>
+                    <p>이전에는 루트 노드에서 리프 노드들을 찾아준 후, 각 리프에서 탐색을 진행했다.</p>
+                    <p>처음에 루트 노드에서 가장 먼 정점을 찾아주고, 그 정점에서 다시 가장 먼 정점을 찾아주면 DFS를 2번만 사용해서 O(N)에 풀 수 있다.</p>
+                    <p>상당히 정석 풀이법에 근접했는데 아쉬울 따름이다.</p>
                 </div>
 
                 <div class="langTeb">
@@ -69,7 +72,7 @@
                         </li>
                     </ul>
                     <div id="tab1" class="tab current">
-                        <script src="https://gist.github.com/Shiny-Shine/ff0f07ffcc8df45292ce2034d2fde9a8.js"></script>
+                        <script src="https://gist.github.com/Shiny-Shine/5d6a00231917afea829aad76c92e22f8.js"></script>
                     </div>
                 </div>
             </div>

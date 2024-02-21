@@ -155,7 +155,7 @@ main {
     border-left: 1px solid #d2d2d7;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .results > .gameWrap {
@@ -191,7 +191,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 225px;
-    min-width: 350px;
+    min-width: 300px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

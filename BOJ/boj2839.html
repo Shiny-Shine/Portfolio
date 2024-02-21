@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../CSS/style2.css">
     <link rel="stylesheet" href="../CSS/styleBOJ.css">
     <title>2839번 설탕 배달</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="../Script/srcTable.js"></script>
 </head>
 <body>
     <header>
@@ -48,15 +50,80 @@
                 <div class="bTitle">
                     <h2>[백준] BOJ 2839 - 설탕 배달</h2>
                     <p>2019-03-19</p>
-                    <a href="https://www.acmicpc.net/problem/2839">https://www.acmicpc.net/problem/2839</a>
+                    <a href="https://www.acmicpc.net/problem/2839">문제 보기</a>
                 </div>
 
-                <p>그리디 문제이다.</p>
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&width=800&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=true&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2523define%2520_CRT_SECURE_NO_WARNINGS%250A%2523include%253Cstdio.h%253E%250A%250Aint%2520main%28void%29%2520%257B%250A%2509int%2520n%252C%2520ans%2520%253D%25205000%252C%2520cnt%2520%253D%25200%252Ctmp%253B%250A%250A%2509scanf%28%2522%2525d%2522%252C%2520%2526n%29%253B%250A%250A%2509for%2520%28int%2520i%2520%253D%25201%253B%2520i%2520%253C%253D%2520n%2520%252F%25205%253B%2520i%252B%252B%29%2520%257B%250A%2509%2509tmp%2520%253Dn%2520-%25205%2520*%2520i%253B%250A%2509%2509cnt%252B%252B%253B%250A%2509%2509if%2520%28tmp%2520%2525%25203%2520%253D%253D%25200%2520%2526%2526%2520tmp%2520%252F%25203%2520%252B%2520cnt%2520%253C%2520ans%29%2509ans%2520%253D%2520tmp%2520%252F%25203%2520%252B%2520cnt%253B%250A%2509%257D%250A%250A%2509if%2520%28n%2520%2525%25205%2520%253D%253D%25200%29%2509ans%2520%253D%2520n%2520%252F%25205%253B%250A%2509if%2520%28n%2520%2525%25203%2520%253D%253D%25200%2520%2526%2526%2520n%2520%252F%25203%2520%253C%2520ans%29%2509ans%2520%253D%2520n%2520%252F%25203%253B%250A%250A%2509if%2520%28ans%2520%253D%253D%25205000%29%2509printf%28%2522-1%2522%29%253B%250A%2509else%250A%2509%2509printf%28%2522%2525d%2522%252C%2520ans%29%253B%250A%250A%257D"
-                    style="width: 800px; height: 575px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                <p>간단한 그리디 문제이다.</p>
+                <p>이 문제의 핵심은 <b>나눠 담을 수 있는 봉지 수를 최대한 적게 만드는 것.</b></p>
+                <p>첫째 줄에 설탕의 무게 n이 kg단위로 입력되며 설탕을 담을 수 있는 봉지는 5kg와 3kg으로 두 종류이다.</p>
+                <p>최대한 많은 양을 5kg에, 3kg를 최대한 적게 사용하는게 정답이 된다.</p>
+                <div class="langTeb">
+                    <ul class="tabs">
+                        <li class="langBtn current">
+                            <img src="../img/cpp.png" alt="">
+                            C/C++
+                        </li>
+                        <li class="langBtn">
+                            <img src="../img/py.png" alt="">
+                            Python
+                        </li>
+                        <li class="langBtn">
+                            <img src="../img/java.png" alt="">
+                            Java
+                        </li>
+                        <li class="langBtn">
+                            <img src="../img/cs.png" alt="">
+                            C#
+                        </li>
+                        <li class="langBtn">
+                            <img src="../img/js.png" alt="">
+                            JavaScript
+                        </li>
+                        <li class="langBtn">
+                            <img src="../img/kotlin.png" alt="">
+                            Kotlin
+                        </li>
+                        <li class="langBtn">
+                            <img src="../img/rb.png" alt="">
+                            Ruby
+                        </li>
+                        <li class="langBtn">
+                            <img src="../img/golang2.png" alt="">
+                            Go
+                        </li>
+                        <li class="langBtn">
+                            <img src="../img/lua.png" alt="">
+                            Lua
+                        </li>
+                    </ul>
+                    <div id="tab1" class="tab current">
+                        <script src="https://gist.github.com/Shiny-Shine/35a4d57ef1c01657725627f6941bb2b8.js"></script>
+                    </div>
+                    <div id="tab2" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/c6920ef06bef6ea662bf8c44ccafe37e.js"></script>
+                    </div>
+                    <div id="tab3" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/e44372f28afb8bda722c860bd7fc22a4.js"></script>
+                    </div>
+                    <div id="tab4" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/d739c4b5673373ca0800077702a90465.js"></script>
+                    </div>
+                    <div id="tab5" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/906e77c08cb019e4d6a73105f6fdee9e.js"></script>
+                    </div>
+                    <div id="tab6" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/93ada27e402947178c1832e29bbbe7b7.js"></script>
+                    </div>
+                    <div id="tab7" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/76e9a897186fa835c1e47965200c041f.js"></script>
+                    </div>
+                    <div id="tab8" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/3c95e9e889279379458af0f415e51ef3.js"></script>
+                    </div>
+                    <div id="tab9" class="tab">
+                        <script src="https://gist.github.com/Shiny-Shine/ab921782c03fedf603ea168a99dde902.js"></script>
+                    </div>
+                </div>
             </div>
         </main>
     </section>
