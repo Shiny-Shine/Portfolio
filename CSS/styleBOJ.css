@@ -37,6 +37,8 @@ main h1 {
 }
 
 .mainText {
+    width: 100%;
+    text-align: center;
     border-bottom: 1px solid #d2d2d7;
     padding: 28px 15px;
     margin-bottom: 28px;
@@ -78,4 +80,8 @@ main h1 {
 
 .current {
     display: block;
+}
+
+.langTeb {
+    width: 100%;
 }
