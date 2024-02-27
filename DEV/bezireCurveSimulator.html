@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style2.css">
     <link rel="stylesheet" href="../CSS/styleBOJ.css">
-    <title>알고리즘에 대해</title>
+    <title>베지어 곡선 시뮬레이터</title>
 </head>
 <body>
     <header>
@@ -42,15 +42,24 @@
             </div>
             <div class="results">
                 <div class="bTitle">
-                    <h2>알고리즘에 대해</h2>
-                    <p>2024-02-21</p>
-                    <a href="../math.html">문제 및 해설 보러가기</a>
+                    <h2>Bezire Curve Simulator</h2>
+                    <p>2024-01-06</p>
                 </div>
-
-                <p>알고리즘 문제를 풀게 되면 언어 사용법을 자연스럽게 익힐 수 있으며</p>
-                <p>다양한 알고리즘과 자료구조를 사용하면서 효율적인 코드 작성과 최적화를 배울 수 있습니다.</p>
-                <p>다른 개발을 하는 도중에도 꾸준히 알고리즘 문제를 풀며 감각을 잃지 않도록 노력하고 있습니다.</p>
-                <div class="innerImg" style="background-image: url(https://github-readme-solvedac.hyp3rflow.vercel.app/api/?handle=tidlsss);"></div>
+                <p>베지어 곡선 시뮬레이터.</p>
+                <p><a href="https://github.com/Shiny-Shine/Galaga/tree/BezireCurveSimulation">GitHub link</a></p>
+                <div class="gameWrap">
+                    <iframe src="https://i.simmer.io/@ShinyShine/bezirecurvesimulator" style="width:100%; height:100%;"></iframe>
+                </div>
+                <p></p>
+                <p>베지어 곡선을 유니티로 구현해보았습니다.</p>
+                <p>+ 와 - 버튼을 이용해 포인터의 개수를 조정할 수 있고, 마우스 또는 터치로 드래그하여 포인터 위치를 조정할 수 있습니다.</p>
+                <p>시작 버튼을 누르면 현재의 포인터들을 따라 곡선을 그리기 시작합니다.</p>
+                <p>베지어 곡선(Bezier Curve)은 컴퓨터 그래픽스에서 사용되는 특별한 형태의 곡선으로,<br>CSS 애니메이션 등에서 도형을 그릴 때 사용합니다.</p>
+                <p>베지어 곡선을 만드는 알고리즘을 재귀함수를 사용해 다음과 같이 구현했습니다.</p>
+                <p><b>1. n개의 점을 잇는 n-1개의 선분을 만든다.</b></p>
+                <p><b>2. 만들어진 각 선분에 t값에 비례하는 곳에 점을 찍는다.</b></p>
+                <p><b>3. n개의 점에 대하여 n-1개의 새로운 점들의 위치가 생긴다.</b></p>
+                <p><b>4. 이를 1개의 점이 남을때까지 반복하면 그 점의 위치가 바로 베지어 곡선을 그리는 다음 위치가 된다.</b></p>
             </div>
         </main>
     </section>

@@ -95,7 +95,7 @@ iframe{
     height: 100%;
 }
 
-.bannerBig:nth-child(2), .gContainer > .bannerBig:first-child, .flappy {
+.bannerBig:nth-child(2), .gContainer > .bannerBig:first-child, .black {
     background-color: #000;
     color: white;
 }
