@@ -1,4 +1,4 @@
-![Logo](https://github.com/KimYC1223/KimYC1223.github.io/blob/master/meta/android-icon-144x144.png?raw=true)
+![Logo](https://github.com/)
 
 # 신민철의 개발 블로그
 
