@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    word-break: keep-all;
+    line-height: 1.5;
+}
+
+html {
+    font-family: "Source Sans Pro","APPLE SD Gothic Neo",HelveticaNeue,Helvetica,"NanumGothic","맑은 고딕","Malgun Gothic",arial,sans-serif,"Source Sans Pro",sans-serif;
+    font-size: 14px;
+}
+
+div {
+    display: block;
+}
+
+aside {
+    width: 220px;
+    height: 500px;
+    display: block;
+    position: fixed;
+    top: 100px;
+    transform: translateX(-50%);
+    left: calc(25% - 190px);
+    background-color: lightblue;
+}
+
+.sideL {
+
+}
+
+.sideR {
+    transform: translateX(-50%);
+    left: calc(75% + 190px);
+}
+
+.main {
+    height: 400px;
+    background-color: lightgreen;
+}
+
+main {
+    margin: 0 auto;
+    width: 50%;
+    height: 1000px;
+    background-color: lemonchiffon;
+}
