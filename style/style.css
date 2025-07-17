@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     word-break: keep-all;
-    line-height: 1.5;
 }
 
 html {
@@ -9,38 +8,51 @@ html {
     font-size: 14px;
 }
 
-div {
-    display: block;
+header {
+
+}
+
+nav {
+
+}
+
+.hero {
+    height: 500px;
+    background-color: lightcoral;
 }
 
 aside {
     width: 220px;
-    height: 500px;
-    display: block;
-    position: fixed;
-    top: 100px;
-    transform: translateX(-50%);
-    left: calc(25% - 190px);
+    height: 600px;
+    position: sticky;
+    top: 15%;
+    left: 15%;
     background-color: lightblue;
+    margin-top: -250px;
+    border-radius: 110px;
 }
 
-.sideL {
+.side {
 
-}
-
-.sideR {
-    transform: translateX(-50%);
-    left: calc(75% + 190px);
-}
-
-.main {
-    height: 400px;
-    background-color: lightgreen;
 }
 
 main {
     margin: 0 auto;
-    width: 50%;
+    width: 1000px;
     height: 1000px;
     background-color: lemonchiffon;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.itemP {
+    background-color: grey;
+    width: 500px;
+    height: 300px;
+}
+
+.itemP > a {
 }
