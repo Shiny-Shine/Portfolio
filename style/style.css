@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    word-break: keep-all;
 }
 
 html {
@@ -21,15 +20,22 @@ nav {
     background-color: lightcoral;
 }
 
+.Portfolio {
+    display: flex;
+    justify-content: center;
+}
+
 aside {
-    width: 220px;
-    height: 600px;
-    position: sticky;
-    top: 15%;
-    left: 15%;
+    width: 300px;
+    height: 700px;
     background-color: lightblue;
-    margin-top: -250px;
-    border-radius: 110px;
+    margin-top: -175px;
+    margin-right: 25px;
+}
+
+.containerP {
+    width: 66%;
+    background-color: lightgreen;
 }
 
 .side {
@@ -38,21 +44,30 @@ aside {
 
 main {
     margin: 0 auto;
-    width: 1000px;
-    height: 1000px;
-    background-color: lemonchiffon;
 }
 
-.portfolio {
+.boxP {
     display: flex;
     flex-wrap: wrap;
+    gap: 15px; /* 아이템 간의 간격 */
 }
 
-.itemP {
+.boxP > div {
     background-color: grey;
-    width: 500px;
+    width: calc(50% - 7.5px);
     height: 300px;
 }
 
-.itemP > a {
+.itemS {
+    display: flex;
+}
+
+.itemS > .thumbnail {
+    width: 66%;
+    background-color: palegoldenrod;
+}
+
+.itemS > .info {
+    width: 34%;
+    background-color: lightcyan;
 }
