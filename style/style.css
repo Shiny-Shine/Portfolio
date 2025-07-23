@@ -99,6 +99,27 @@ aside {
     background-color: lightgreen;
 }
 
+.subtitle {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitle > p {
+    flex-wrap: nowrap;
+    width: fit-content;
+    margin-right: 20px;
+}
+
+.line {
+    height: 3px;
+    background: linear-gradient(to right, #c1c1c1, transparent);
+    border-radius: 1.5px;
+    width: 100%;
+}
+
 .side {
 
 }
@@ -107,10 +128,28 @@ main {
     margin: 0 auto;
 }
 
+.textbox > ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.textbox > ul > li {
+    display: inline-block;
+    padding: 0 17px;
+    border-left: 1px solid #000;
+}
+
+.textbox > ul > li:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
 .boxP {
     display: flex;
     flex-wrap: wrap;
     gap: 15px; /* 아이템 간의 간격 */
+    margin-bottom: 150px;
 }
 
 .boxP > div {
@@ -121,6 +160,8 @@ main {
 
 .itemS {
     display: flex;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .itemS > .thumbnail {
@@ -131,16 +172,37 @@ main {
 .itemS > .info {
     width: 40%;
     background-color: lightcyan;
+    font-size: 12px;
+    padding: 30px 20px;
+}
+
+.info > p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #333;
+}
+
+.tag {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tag > p {
+    background-color: #2C374E;
+    color: white;
+    width: fit-content;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.tagLine {
+    margin: 12px 0;
 }
 
 .textbox {
 
-}
-
-.textbox ul {
-    list-style: none;
-}
-
-.textbox ul li {
-    display: inline-block;
 }
