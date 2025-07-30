@@ -1,0 +1,229 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(22, 22, 23, 0.8);
+}
+
+nav{
+    height: 200px;
+    background-color: cyan;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > a {
+}
+
+nav > a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: all .3s ease-out;
+}
+
+nav > a:hover::after{
+    width: 50%;
+}
+
+nav > a:first-child:hover::after{
+    width: 0%;
+}
+
+nav > a:first-child > img {
+    width: 35px;
+    height: 35px;
+}
+
+.bannerBig {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(249, 249, 251);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.bannerBig:nth-child(2), .gContainer > .bannerBig:first-child, .black {
+    background-color: #000;
+    color: white;
+}
+
+.bannerBig > .textWrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 55px;
+}
+
+.textWrap > h2 {
+    display: block;
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+}
+
+.textWrap > span {
+    font-size: 28px;
+    padding: 15px;
+}
+
+.textWrap > h3 {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: .004em;
+    margin-top: 6px;
+}
+
+.textWrap > .links {
+    font-size: 20px;
+    letter-spacing: .011em;
+    margin-top: 0.65em;
+    height: 32px;
+}
+
+.links > a {
+    color: rgb(41, 151, 255);
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textbox > ul {
+    color: #585858;
+    list-style: none;
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.textbox > ul > li {
+    display: inline-block;
+    padding: 0 17px;
+    border-left: 1px solid #585858;
+}
+
+.textbox > ul > li:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitle > p {
+    white-space: nowrap;
+    font-family: 'Pretendard-Bold';
+    margin-right: 20px;
+}
+
+.recent {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin: 50px 0;
+    padding: 0 50px;
+}
+
+.slider {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    animation: slideShow 8s infinite;
+    gap: 20px;
+}
+
+.slider img {
+    width: calc(33.33% / 2 - 13px);
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@keyframes slideShow {
+    0%, 30% { transform: translateX(0); }
+    50%, 80% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+.gContainer {
+    margin: 0 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(50%, auto));
+    column-gap: 12px;
+}
+
+.gContainer > .bannerBig {
+    height: 580px;
+}
+
+.gContainer > .bannerBig > .textWrap > h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+}
+
+.gContainer > .bannerBig > .textWrap > h3 {
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    margin-top: 4px;
+}
+
+.gContainer > .bannerBig > .textWrap > .links {
+    font-size: 17px;
+    letter-spacing: .022em;
+    margin-top: 0.65em;
+    height: 32px;
+}
+
+footer {
+    border-top:1px solid #d2d2d7;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 40px 25%;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 1.33337;
+    min-width: 1024px;
+    background-color: #f5f5f7;
+}
