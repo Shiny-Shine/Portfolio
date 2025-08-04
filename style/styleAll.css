@@ -41,7 +41,7 @@ html {
 }
 
 .line {
-    height: 3px;
+    height: 1px;
     background: linear-gradient(to right, #c1c1c1, transparent);
     border-radius: 1.5px;
     width: 100%;

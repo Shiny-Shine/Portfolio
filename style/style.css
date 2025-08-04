@@ -1,11 +1,6 @@
-header {
-
-}
-
-nav {
-
-}
-
+/* ==========================================================================
+   기본 설정
+   ========================================================================== */
 .hero {
     height: 500px;
     background-color: #555555;
@@ -19,6 +14,11 @@ nav {
     height: 51px;
 }
 
+/* ==========================================================================
+   공통 컴포넌트
+   ========================================================================== */
+
+/* 프로필 섹션 */
 .profile {
     text-align: center;
 }
@@ -41,41 +41,52 @@ nav {
     color: #666;
 }
 
+/* 메뉴 공통 스타일 */
 .menu {
     display: flex;
     flex-direction: column;
     margin: 48px 0;
 }
 
-.menu > ul {
+.menu ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.menu > ul, .menu > ul > li {
+.menu li {
     font-size: 11px;
     padding: 8.5px 0;
     color: #D4D4D4;
 }
 
-.menu > ul > li > p {
+.menu li p {
     padding-top: 4px;
     font-size: 17px;
 }
 
-.social > ul {
+/* 소셜 미디어 */
+.social ul {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.social > ul > li > a > img {
+.social img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
+/* ==========================================================================
+   레이아웃 섹션
+   ========================================================================== */
+
+/* 포트폴리오 메인 섹션 */
 .Portfolio {
     display: flex;
     justify-content: center;
@@ -83,20 +94,35 @@ nav {
     color: white;
 }
 
+/* 사이드바 */
 aside {
     width: 435px;
     height: 681px;
-    background-color: lightblue;
     margin-top: -120px;
     margin-right: 20px;
     padding: 0 73px;
     background-color: rgba(0, 0, 0, 0);
 }
 
-.containerP {
-    width: 66%;
+aside .line {
+    height: 3px;
 }
 
+/* 메인 컨테이너 */
+.containerP {
+    width: 66%;
+    margin-bottom: 20rem;
+}
+
+main {
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   텍스트 및 제목 스타일
+   ========================================================================== */
+
+/* 서브타이틀 공통 */
 .subtitle {
     display: flex;
     align-items: center;
@@ -106,42 +132,45 @@ aside {
     margin-top: 215px;
 }
 
-.subtitle > p {
+.subtitle p {
     white-space: nowrap;
     font-family: 'Pretendard-Bold';
     margin-right: 20px;
 }
 
-.side {
-
+/* 텍스트박스 및 태그 네비게이션 */
+.textbox {
+    /* 텍스트박스 스타일 */
 }
 
-main {
-    margin: 0 auto;
-}
-
-.textbox > ul {
+.textbox ul {
     color: #585858;
     list-style: none;
     display: flex;
     margin-bottom: 14px;
+    padding: 0;
 }
 
-.textbox > ul > li {
+.textbox li {
     display: inline-block;
     padding: 0 17px;
     border-left: 1px solid #585858;
 }
 
-.textbox > ul > li:first-child {
+.textbox li:first-child {
     border-left: none;
     padding-left: 0;
 }
 
+/* ==========================================================================
+   카드 및 아이템 스타일
+   ========================================================================== */
+
+/* 박스 컨테이너 */
 .boxP {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px; /* 아이템 간의 간격 */
+    gap: 15px;
 }
 
 .boxP > div {
@@ -151,40 +180,46 @@ main {
     aspect-ratio: 16 / 9;
 }
 
+/* 아이템 스타일 */
 .itemS {
     display: flex;
     border-radius: 8px;
     overflow: hidden;
 }
 
-.itemS > .thumbnail {
+.thumbnail {
     width: 61%;
     background-color: #8F8F8F;
 }
 
-.itemS > .info {
+.info {
     position: relative;
     font-family: "Pretendard-Light";
     color: #979797;
     width: 40%;
     background-color: #161827;
-    font-size: 12px;
+    font-size: 14px;
     padding: 30px 20px;
 }
 
-.info > p {
+.info p {
     font-family: "Pretendard-SemiBold";
     font-size: 20px;
     color: white;
     margin-bottom: 12px;
 }
 
-.info > span {
+.info .date {
     position: absolute;
     bottom: 30px;
+    font-family: "Pretendard-Light";
     font-size: 12px;
     color: white;
 }
+
+/* ==========================================================================
+   태그 스타일
+   ========================================================================== */
 
 .tag {
     font-family: "Pretendard-SemiBold";
@@ -194,7 +229,7 @@ main {
     font-weight: bold;
 }
 
-.tag > p {
+.tag p {
     background-color: #2C374E;
     color: white;
     width: fit-content;
@@ -205,12 +240,9 @@ main {
     text-align: center;
     line-height: 28px;
     padding: 5px 10px;
+    margin: 0;
 }
 
 .tagLine {
     margin: 12px 0;
-}
-
-.textbox {
-
 }
