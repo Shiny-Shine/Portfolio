@@ -234,6 +234,146 @@ nav {
 }
 
 /* ==========================================================================
+   Members 섹션
+   ========================================================================== */
+.members-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.member-item {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 60px;
+}
+
+/* 프로필 (원형 스타일로 변경) */
+.profile {
+    flex: 0 0 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #f0f0f0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.profile h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+    padding-top: 10px;
+}
+
+.profile .role {
+    font-size: 17px;
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+/* 기존 index.html 프로필 스타일과 통일 */
+.profile h1,
+.profile h3 {
+    padding-top: 15px;
+    padding-bottom: 4px;
+    font-size: 24px;
+}
+
+.profile p,
+.profile .role {
+    font-size: 17px;
+    color: #666;
+}
+
+/* 멤버 슬라이더 (크기 증가) */
+.member-slider-container {
+    flex: 1;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.member-slider {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.member-slider img {
+    width: calc(25% - 11.25px);
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.member-item:nth-child(2) .member-slider {
+    animation: memberSlideL 12s infinite;
+}
+
+.member-item:nth-child(3) .member-slider {
+    animation: memberSlideR 12s infinite;
+}
+
+.member-item:nth-child(4) .member-slider {
+    animation: memberSlideL 12s infinite;
+}
+
+.member-item:nth-child(5) .member-slider {
+    animation: memberSlideR 12s infinite;
+}
+
+/* 왼쪽으로 슬라이드 (홀수번 - 1, 3번) */
+@keyframes memberSlideL {
+    0%, 20% { transform: translateX(0); }
+    30%, 50% { transform: translateX(-25%); }
+    60%, 80% { transform: translateX(-50%); }
+    90%, 100% { transform: translateX(0); }
+}
+
+/* 오른쪽으로 슬라이드 (짝수번 - 2, 4번) */
+@keyframes memberSlideR {
+    0%, 20% { transform: translateX(-50%); }
+    30%, 50% { transform: translateX(-25%); }
+    60%, 80% { transform: translateX(0); }
+    90%, 100% { transform: translateX(-50%); }
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .member-item {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .profile {
+        flex: none;
+    }
+    
+    .member-slider-container {
+        height: 200px;
+    }
+    
+    .member-slider img {
+        width: calc(50% - 7.5px);
+    }
+}
+
+/* ==========================================================================
    푸터
    ========================================================================== */
 footer {
