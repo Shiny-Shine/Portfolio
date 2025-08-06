@@ -77,10 +77,11 @@ nav {
    ========================================================================== */
 .banner {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--light-bg);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -109,7 +110,6 @@ nav {
     font-size: 24px;
     font-weight: 400;
     letter-spacing: .004em;
-    margin: 6px 0 0 0;
     text-align: center;
 }
 
@@ -131,6 +131,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .title {
@@ -167,33 +168,77 @@ nav {
 /* ==========================================================================
    슬라이더
    ========================================================================== */
+
 .slider-container {
     width: 100%;
-    height: 300px;
+    max-width: 99.45vw;
+    height: 37vh;
     overflow: hidden;
-    margin: 50px 0;
-    padding: 0 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
 .slider {
     width: 200%;
     height: 100%;
     display: flex;
-    animation: slideShow 8s infinite;
     gap: 20px;
 }
 
 .slider img {
-    width: calc(33.33% / 2 - 13px);
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    width: 35vw;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    flex-shrink: 0;
 }
 
-@keyframes slideShow {
-    0%, 30% { transform: translateX(0); }
-    50%, 80% { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
+.recent-section .slider {
+    animation: smoothSlide 10s infinite linear;
+}
+
+.member-item:nth-child(even) .slider {
+    animation: smoothSlideL 10s infinite linear;
+}
+
+.member-item:nth-child(odd) .slider {
+    animation: smoothSlideR 10s infinite linear;
+}
+
+@keyframes smoothSlide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-108%); }
+}
+
+/* 왼쪽으로 슬라이드 (홀수번 - 1, 3번) */
+@keyframes smoothSlideL {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-105%); }
+}
+
+/* 오른쪽으로 슬라이드 (짝수번 - 2, 4번) */
+@keyframes smoothSlideR {
+    0% { transform: translateX(-220%); }
+    100% { transform: translateX(-85%); }
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .member-item {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .profile {
+        flex: none;
+    }
+    
+    .slider-container {
+        height: 200px;
+    }
+    
+    .slider img {
+        width: calc(50% - 7.5px);
+    }
 }
 
 /* ==========================================================================
@@ -240,16 +285,15 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 150px;
     width: 100%;
 }
 
 .member-item {
     display: flex;
-    gap: 40px;
+    gap: 30px;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
-    margin-bottom: 60px;
 }
 
 /* 프로필 (원형 스타일로 변경) */
@@ -259,22 +303,29 @@ nav {
     padding: 20px;
 }
 
+.odd .profile {
+    margin-left: 200px;
+}
+
+.even .profile {
+    margin-right: 200px;
+}
+
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
-    border: 4px solid #f0f0f0;
+    border: 5px solid #f0f0f0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px;
 }
 
 .profile h3 {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
     color: #333;
-    padding-top: 10px;
 }
 
 .profile .role {
@@ -287,90 +338,12 @@ nav {
 /* 기존 index.html 프로필 스타일과 통일 */
 .profile h1,
 .profile h3 {
-    padding-top: 15px;
-    padding-bottom: 4px;
     font-size: 24px;
 }
 
-.profile p,
-.profile .role {
+.profile p, .profile .role {
     font-size: 17px;
     color: #666;
-}
-
-/* 멤버 슬라이더 (크기 증가) */
-.member-slider-container {
-    flex: 1;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-}
-
-.member-slider {
-    width: 200%;
-    height: 100%;
-    display: flex;
-    gap: 15px;
-}
-
-.member-slider img {
-    width: calc(25% - 11.25px);
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.member-item:nth-child(2) .member-slider {
-    animation: memberSlideL 12s infinite;
-}
-
-.member-item:nth-child(3) .member-slider {
-    animation: memberSlideR 12s infinite;
-}
-
-.member-item:nth-child(4) .member-slider {
-    animation: memberSlideL 12s infinite;
-}
-
-.member-item:nth-child(5) .member-slider {
-    animation: memberSlideR 12s infinite;
-}
-
-/* 왼쪽으로 슬라이드 (홀수번 - 1, 3번) */
-@keyframes memberSlideL {
-    0%, 20% { transform: translateX(0); }
-    30%, 50% { transform: translateX(-25%); }
-    60%, 80% { transform: translateX(-50%); }
-    90%, 100% { transform: translateX(0); }
-}
-
-/* 오른쪽으로 슬라이드 (짝수번 - 2, 4번) */
-@keyframes memberSlideR {
-    0%, 20% { transform: translateX(-50%); }
-    30%, 50% { transform: translateX(-25%); }
-    60%, 80% { transform: translateX(0); }
-    90%, 100% { transform: translateX(-50%); }
-}
-
-/* 반응형 */
-@media (max-width: 768px) {
-    .member-item {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .profile {
-        flex: none;
-    }
-    
-    .member-slider-container {
-        height: 200px;
-    }
-    
-    .member-slider img {
-        width: calc(50% - 7.5px);
-    }
 }
 
 /* ==========================================================================
