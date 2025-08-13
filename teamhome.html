@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/styleAll.css">
     <link rel="stylesheet" href="./style/stylehome.css">
+    <script src="./script/scrpit.js"></script>
     <title>Shine's Portal</title>
 </head>
 <body>
@@ -44,14 +45,65 @@
     </header>
 
     <section>
-        <div class="banner">
+        <div class="banner team-story-banner" id="team-story">
             <div class="content">
-                <h2>Team Story</h2>
-                <h3>
-                    세상은 넓고 방대하지만 그 안, 나의 여정은 고유하고 빛납니다.<br>
-                    창작자가 자기만의 궤도를 따라 여정을 기록하고, 나만의 세계를 이룰 수 있도록 할것입니다.
-                </h3>
-                <div class="links"><a href="./DEV/algo.html">더 알아보기</a></div>
+                <div class="text-sequence">
+                    <!-- Step 1 -->
+                    <div class="text-item active" data-step="1">
+                        <h2>Team Story</h2>
+                        <h3>
+                            세상은 넓고 방대하지만 그 안, 나의 여정은 고유하고 빛납니다.<br>
+                            창작자가 자기만의 궤도를 따라 여정을 기록하고, 나만의 세계를 이룰 수 있도록 할것입니다.
+                        </h3>
+                        <div class="links"><a href="./DEV/algo.html">더 알아보기</a></div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="text-item" data-step="2">
+                        <h2>Our Mission</h2>
+                        <h3>
+                            기술과 창의성의 경계를 허물며,<br>
+                            혁신적인 디지털 경험을 창조합니다.
+                        </h3>
+                        <div class="links"><a href="./DEV/algo.html">미션 보기</a></div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="text-item" data-step="3">
+                        <h2>Our Vision</h2>
+                        <h3>
+                            모든 창작자가 자신만의 독특한 세계를 구축하고,<br>
+                            그 세계를 통해 사람들과 연결될 수 있도록 돕습니다.
+                        </h3>
+                        <div class="links"><a href="./DEV/algo.html">비전 보기</a></div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="text-item" data-step="4">
+                        <h2>Join Us</h2>
+                        <h3>
+                            함께 새로운 가능성을 탐험하고,<br>
+                            창작의 새로운 지평을 열어나가겠습니다.
+                        </h3>
+                        <div class="links"><a href="./DEV/algo.html">팀 합류하기</a></div>
+                    </div>
+                </div>
+                
+                <!-- Progress Bar -->
+                <div class="scroll-progress">
+                    <div class="progress-line">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="step-indicators">
+                        <div class="step-dot active" data-step="1"></div>
+                        <div class="step-dot" data-step="2"></div>
+                        <div class="step-dot" data-step="3"></div>
+                        <div class="step-dot" data-step="4"></div>
+                    </div>
+                    <div class="step-counter">
+                        <span class="current">01</span> / <span class="total">04</span>
+                    </div>
+                </div>
             </div>
         </div>
 
