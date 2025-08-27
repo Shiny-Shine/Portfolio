@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // 새로고침 시 위치 복원 방지(선택)
-    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-
+    
     // 요소 참조
     const banner = document.getElementById('team-story');
     const textItems = document.querySelectorAll('.text-item');

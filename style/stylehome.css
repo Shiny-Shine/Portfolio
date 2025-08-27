@@ -22,7 +22,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url("../img/Home_BG.png");
+    background-image: url("../img/Home_BG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -139,7 +139,6 @@ section {
     background-position: center;
     right: -10%;
     animation: rotateBG 10s infinite linear;
-    z-index: -10;
     opacity: 0.25; /* 배경의 투명도 조정 */
 }
 
@@ -218,6 +217,7 @@ section {
     justify-content: space-evenly;
     color: white;
 }
+
 .text-item.active {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -502,15 +502,15 @@ section {
 }
 
 .recent-section .slider {
-    animation: smoothSlide 10s infinite linear;
+    animation: smoothSlide 60s infinite linear;
 }
 
 .member-item:nth-child(even) .slider {
-    animation: smoothSlideL 10s infinite linear;
+    animation: smoothSlideL 60s infinite linear;
 }
 
 .member-item:nth-child(odd) .slider {
-    animation: smoothSlideR 10s infinite linear;
+    animation: smoothSlideR 60s infinite linear;
 }
 
 @keyframes smoothSlide {
@@ -520,8 +520,8 @@ section {
 
 /* 왼쪽으로 슬라이드 (홀수번 - 1, 3번) */
 @keyframes smoothSlideL {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-105%); }
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-135%); }
 }
 
 /* 오른쪽으로 슬라이드 (짝수번 - 2, 4번) */
@@ -661,25 +661,13 @@ section {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
-    color: #333;
 }
 
 .profile .role {
     font-size: 17px;
-    color: #666;
+    color: #b9b9b9;
     font-weight: 400;
     margin-bottom: 0;
-}
-
-/* 기존 index.html 프로필 스타일과 통일 */
-.profile h1,
-.profile h3 {
-    font-size: 24px;
-}
-
-.profile p, .profile .role {
-    font-size: 17px;
-    color: #666;
 }
 
 /* ==========================================================================
