@@ -427,3 +427,9 @@ body {
   background: transparent;
   border-radius: 0;
 }
+
+.detail-comments {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid #2c374e;
+}
