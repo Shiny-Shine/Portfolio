@@ -422,6 +422,10 @@ body {
   border: 1px solid #2c374e;
 }
 
+.giscus-frame {
+    margin-top: 100px;
+}
+
 .detail-content pre code {
   padding: 0;
   background: transparent;
