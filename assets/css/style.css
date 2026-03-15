@@ -1,0 +1,249 @@
+/* ==========================================================================
+   기본 설정
+   ========================================================================== */
+.hero {
+    height: 500px;
+    background-color: #555555;
+}
+
+.hero img {
+    position: relative;
+    top: 33px;
+    left: 66px;
+    width: 136px;
+    height: 51px;
+}
+
+/* ==========================================================================
+   공통 컴포넌트
+   ========================================================================== */
+
+/* 프로필 섹션 */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile h1 {
+    padding-top: 36px;
+    padding-bottom: 4px;
+    font-size: 24px;
+}
+
+.profile p {
+    font-size: 17px;
+    color: #666;
+}
+
+/* 메뉴 공통 스타일 */
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: 48px 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    font-size: 11px;
+    padding: 8.5px 0;
+    color: #D4D4D4;
+}
+
+.menu li p {
+    padding-top: 4px;
+    font-size: 17px;
+}
+
+/* 소셜 미디어 */
+.social ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* ==========================================================================
+   레이아웃 섹션
+   ========================================================================== */
+
+/* 포트폴리오 메인 섹션 */
+.Portfolio {
+    display: flex;
+    justify-content: center;
+    background-color: #020917;
+    color: white;
+}
+
+/* 사이드바 */
+aside {
+    width: 435px;
+    height: 681px;
+    margin-top: -120px;
+    margin-right: 20px;
+    padding: 0 73px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+aside .line {
+    height: 3px;
+}
+
+/* 메인 컨테이너 */
+.containerP {
+    width: 50%;
+    margin-right: 150px;
+    margin-bottom: 20rem;
+}
+
+main {
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   텍스트 및 제목 스타일
+   ========================================================================== */
+
+/* 서브타이틀 공통 */
+.subtitle {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+
+.subtitle p {
+    white-space: nowrap;
+    font-family: 'Pretendard-Bold';
+    margin-right: 20px;
+}
+
+/* 텍스트박스 및 태그 네비게이션 */
+.textbox {
+    /* 텍스트박스 스타일 */
+}
+
+.textbox ul {
+    color: #585858;
+    list-style: none;
+    display: flex;
+    margin-bottom: 14px;
+    padding: 0;
+}
+
+.textbox li {
+    display: inline-block;
+    padding: 0 17px;
+    border-left: 1px solid #585858;
+}
+
+.textbox li:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+/* ==========================================================================
+   카드 및 아이템 스타일
+   ========================================================================== */
+
+/* 박스 컨테이너 */
+.boxP {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.boxP > div {
+    border-radius: 8px;
+    background-color: grey;
+    width: calc(50% - 7.5px);
+    aspect-ratio: 16 / 9;
+}
+
+/* 아이템 스타일 */
+.itemS {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.thumbnail {
+    width: 61%;
+    background-color: #8F8F8F;
+}
+
+.info {
+    position: relative;
+    font-family: "Pretendard-Light";
+    color: #979797;
+    width: 40%;
+    background-color: #161827;
+    font-size: 14px;
+    padding: 30px 20px;
+}
+
+.info p {
+    font-family: "Pretendard-SemiBold";
+    font-size: 20px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.info .date {
+    position: absolute;
+    bottom: 30px;
+    font-family: "Pretendard-Light";
+    font-size: 12px;
+    color: white;
+}
+
+/* ==========================================================================
+   태그 스타일
+   ========================================================================== */
+
+.tag {
+    font-family: "Pretendard-SemiBold";
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tag p {
+    background-color: #2C374E;
+    color: white;
+    width: fit-content;
+    min-width: 90px;
+    height: 36px;
+    border-radius: 25px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 28px;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.tagLine {
+    margin: 12px 0;
+}
