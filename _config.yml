@@ -22,8 +22,8 @@ title: Shine
 email: zero777960@gmail.com
 description: >-
 
-baseurl: ""
-url: ""
+url: "https://shiny-shine.github.io"
+baseurl: "/Portfolio"
 
 github_username:  Shiny-Shine
 
