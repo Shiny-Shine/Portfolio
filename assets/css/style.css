@@ -174,13 +174,6 @@ main {
     gap: 15px;
 }
 
-.boxP > div {
-    border-radius: 8px;
-    background-color: grey;
-    width: calc(50% - 7.5px);
-    aspect-ratio: 16 / 9;
-}
-
 /* 아이템 스타일 */
 .itemS {
     display: flex;

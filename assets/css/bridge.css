@@ -6,10 +6,6 @@ body {
   display: none !important;
 }
 
-.hero {
-  background:lightgray;
-}
-
 .hero-logo img {
   position: static;
   margin: 33px 0 0 66px;
@@ -32,11 +28,6 @@ body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 15px;
   align-items: stretch;
-}
-
-.boxP > div {
-  width: auto;
-  min-width: 0;
 }
 
 .boxP > .empty-state {
@@ -257,19 +248,6 @@ body {
   line-height: 1.9;
 }
 
-.detail-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 32px;
-}
-
-.detail-gallery img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-}
-
 @media (max-width: 1024px) {
   .Portfolio {
     flex-direction: column;
@@ -352,10 +330,6 @@ body {
   .detail-body {
     padding: 24px;
   }
-
-  .detail-gallery {
-    grid-template-columns: 1fr;
-  }
 }
 
 .detail-content > :first-child {
@@ -422,18 +396,6 @@ body {
   border: 1px solid #2c374e;
 }
 
-.gsc-reactions {
-    margin-top: 100px;
-}
-
-.detail-content pre code {
-  padding: 0;
-  background: transparent;
-  border-radius: 0;
-}
-
-.detail-comments {
-  margin-top: 40px;
-  padding-top: 24px;
-  border-top: 1px solid #2c374e;
+.giscus {
+  margin-top: 50px;
 }
